@@ -8,8 +8,8 @@
 # インストール
 
 ```
-$ git clone git@github.com:rokuzeudon/6q-boilerplate-hatenablog_theme.git
-$ cd 6q-boilerplate-hatenablog_theme
+$ git clone git@github.com:rokuzeudon/6q-hatenablog_theme-square_plates.git
+$ cd 6q-hatenablog_theme-square_plates
 $ npm install
 ```
 
@@ -20,7 +20,7 @@ $ npm install
 # 構造
 
 ```
-6q-boilerplate-hatenablog_theme/
+6q-hatenablog_theme-square_plates/
 ┣┳ scss/
 ┃┗┳ lib/
 ┃ ┗ style.scss
