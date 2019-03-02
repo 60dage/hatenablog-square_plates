@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*!
+  Theme: SquarePlates
+  Author: rokuzeudon
+  Responsive: yes
+  Description:
+*/
+
+// import normalize
+@import "node_modules/normalize.css/normalize";
+
+// import options
+@import "lib/_variable";
+@import "lib/_mixin";
+
+// import rule
+// @import "lib/rule/flex-order";
+// @import "lib/rule/z-index";
+
+// import core
+@import "lib/core/_common";
+@import "lib/core/header";
+@import "lib/core/breadcrumb";
+@import "lib/core/main";
+@import "lib/core/aside";
+@import "lib/core/footer";
+
+// import pages
+@import "lib/core/page-archive";
+@import "lib/core/page-about";

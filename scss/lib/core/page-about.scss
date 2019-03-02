@@ -1,0 +1,13 @@
+.page-about {
+  .entry-content {
+    dt {
+      font-weight: bold;
+      border-bottom: $border-solid-thin;
+      margin-bottom: .5em;
+    }
+    dd {
+      margin-left: 0;
+      margin-bottom: 2em;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+#blog-title {
+  margin: 2em 0;
+  text-align: center;
+  @include mq-sm {
+    margin: 3em 0;
+    text-align: left;
+  }
+}
+#title {
+  margin: 0;
+  font-size: 1.5rem;
+  @include mq-md {
+    font-size: 1.7rem;
+  }
+  a {
+    color: $color-text;
+  }
+}
+#blog-description {
+  font-weight: normal;
+  font-size: .8rem;
+  margin: 1em 0 0;
+}
+
+// ヘッダ画像を設定したとき
+.header-image-enable {
+  #blog-title {
+    margin: 0 0 2em;
+  }
+  #blog-title-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #blog-title-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

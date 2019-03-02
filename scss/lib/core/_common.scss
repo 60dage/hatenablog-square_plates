@@ -1,0 +1,116 @@
+html,
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
+  color: $color-text;
+  background-color: $color-white;
+  line-height: 1.8;
+}
+a {
+  color: $color-link;
+  &:hover { color: $color-link-hover }
+  &.keyword {
+    text-decoration: none;
+    border-bottom: $border-dotted-thin;
+    color: $color-text;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  color: $color-text;
+  line-height: 1.3;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+}
+
+// グローバルヘッダ
+#globalheader-container {
+  background-color: $color-text;
+  color: $color-white;
+}
+
+// container
+#container,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  @include mq-sm {
+    width: 720px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include mq-md {
+    width: 940px;
+  }
+}
+
+// PC 2カラムレイアウト
+#content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mq-sm {
+    flex-direction: row;
+  }
+}
+#wrapper {
+  @include mq-sm { width: 480px }
+  @include mq-md { width: 600px }
+}
+#box2 {
+  @include mq-sm { width: 200px }
+  @include mq-md { width: 300px }
+}
+
+// PC 1カラムレイアウト
+// #content-inner {
+//   flex-direction: column;
+//   align-items: center;
+// }
+// #wrapper {
+//   @include mq-sm {
+//    width: 100%;
+//   }
+//   @include mq-md {
+//    max-width: 720px;
+//   }
+// }
+// #box2 {
+//   width: 100%;
+//   @include mq-sm {
+//    width: 100%;
+//   }
+//   @include mq-md {
+//    width: 100%;
+//   }
+// }
+// #box2-inner {
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   @include mq-sm {
+//    margin-left: -20px;
+//    flex-direction: row;
+//   }
+//   @include mq-md {
+//    margin-left: -30px;
+//   }
+// }
+// .hatena-module {
+//   width: 100%;
+//   @include mq-sm {
+//    width: 33.3333%;
+//   }
+//   @include mq-md {
+//    padding-left: 30px;
+//   }
+// }
+
+// タイトル下HTML
+#top-editarea {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,19 @@
+// color
+$color-white: #fff;
+$color-text: #454545;
+$color-text-light: lighten($color-text, 30%);
+$color-link: #1487bd;
+$color-link-hover: darken($color-link, 10%);
+
+// background-color
+$background-light: #f8f8f8;
+
+// border
+$border-solid-thin: 1px solid #ddd;
+$border-dotted-thin: 1px dotted #ddd;
+
+// media queries
+// $mq-xs: "max-width: 480px";
+$mq-sm: "min-width: 768px";
+$mq-md: "min-width: 992px";
+// $mq-lg: "min-width: 1200px";
