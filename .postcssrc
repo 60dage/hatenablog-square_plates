@@ -1,0 +1,12 @@
+{
+  "parser": "postcss-scss",
+  "plugins": {
+    "autoprefixer": {
+      "grid": true,
+      "browsers": [
+        "last 1 versions",
+        "> 1%",
+      ]
+    }
+  }
+}

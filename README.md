@@ -15,7 +15,11 @@ $ npm install
 
 # 始め方
 
-`$ npm run watch`
+SCSSファイルのコンパイルと監視
+`$ npx parcel scss/style.scss -d build`
+
+minyfy
+`$ npx parcel build scss/style.scss`
 
 # 構造
 
