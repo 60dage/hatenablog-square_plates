@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Noto+Sans+JP:400,700,900&subset=japanese');
+
 html,
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
   color: $color-text;
   line-height: 1.8;
 }
