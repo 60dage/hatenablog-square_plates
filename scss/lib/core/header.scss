@@ -6,15 +6,15 @@
     text-align: left;
   }
 }
+#blog-title-inner {
+  padding: 0 1em;
+}
 #title {
   margin: 0;
-  font-size: 1.5rem;
-  @include mq-md {
-    font-size: 1.7rem;
-  }
-  a {
-    color: $color-text;
-  }
+  font-size: 1.8rem;
+  font-weight: 900;
+  @include mq-md { font-size: 2rem }
+  a { color: $color-text }
 }
 #blog-description {
   font-weight: normal;
@@ -31,9 +31,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  #blog-title-content {
-    margin-left: 10px;
-    margin-right: 10px;
+    text-align: left;
   }
 }
