@@ -15,11 +15,17 @@
   .date, .entry-title, .categories {
     display: inline-block;
   }
+  .date {
+    font-family: $font-montserrat;
+  }
   .entry-title {
     margin: 0;
   }
   .entry-title-link {
     color: $color-white;
+    background: transparent;
+    transition: $transition-normal;
+    &:hover { text-decoration: underline }
   }
   .entry-thumb-link {
     position: absolute;
@@ -36,6 +42,7 @@
     background-size: cover;
     background-position: center;
     filter: brightness(25%);
+    transition: $transition-normal;
   }
   .entry-description {
     margin: 0;
@@ -50,10 +57,29 @@
 }
 .archive-category-link {
   color: $color-white;
+  background: $color-text;
   text-decoration: none;
+  transition: $transition-normal;
+  &:hover {
+    color: $color-white;
+    text-decoration: underline;
+  }
   &::before {
-    content: "#";
+    content: "# ";
     display: inline;
-    padding: 0 .2em 0 0;
+    font-weight: bold;
+  }
+}
+
+// thumbnail カーソルON時の変化
+.archive-entry:hover {
+  .entry-title-link {
+    color: $color-text;
+    background: $color-white;
+    transition: $transition-fast;
+  }
+  .entry-thumb {
+    filter: brightness(80%);
+    transition: $transition-fast;
   }
 }

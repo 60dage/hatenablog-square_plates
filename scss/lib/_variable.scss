@@ -1,7 +1,7 @@
 // color
 $color-white: #fff;
-$color-text: #454545;
-$color-text-light: lighten($color-text, 30%);
+$color-text: #111;
+$color-text-light: lighten($color-text, 50%);
 $color-link: #1487bd;
 $color-link-hover: darken($color-link, 10%);
 
@@ -11,6 +11,13 @@ $background-light: #f8f8f8;
 // border
 $border-solid-thin: 1px solid #ddd;
 $border-dotted-thin: 1px dotted #ddd;
+
+// font
+$font-montserrat: 'Montserrat', sans-serif;
+
+// transition
+$transition-fast: ease-out .06s;
+$transition-normal: ease-out .2s;
 
 // media queries
 $mq-xs: "max-width: 480px";
