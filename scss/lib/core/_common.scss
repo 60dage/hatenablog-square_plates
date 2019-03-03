@@ -34,35 +34,23 @@ h1,h2,h3,h4,h5,h6 {
 // container
 #container,
 #footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  @include mq-sm {
-    width: 720px;
     margin: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @include mq-md {
-    width: 940px;
-  }
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  @include mq-md { max-width: 88rem }
 }
 
 // PC 2カラムレイアウト
 #content-inner {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  @include mq-sm {
-    flex-direction: row;
-  }
+  flex-direction: column;
+  @include mq-md { flex-direction: row }
 }
-#wrapper {
-  @include mq-sm { width: 480px }
-  @include mq-md { width: 600px }
-}
-#box2 {
-  @include mq-sm { width: 200px }
-  @include mq-md { width: 300px }
+#wrapper {  // 左カラム幅可変
+  flex: 1;
 }
 
 // タイトル下HTML
