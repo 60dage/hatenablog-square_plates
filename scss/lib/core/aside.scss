@@ -1,6 +1,9 @@
 #box2 {
   width: 100%;
-  @include mq-md { width: 22rem }
+  @include mq-md {
+    width: 23rem;
+    margin: 0 0 0 1em;
+  }
 }
 
 .hatena-module {
