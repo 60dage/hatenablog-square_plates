@@ -1,8 +1,13 @@
 #box2 {
+  margin-bottom: 2rem;
   width: 100%;
+  @include mq-xs {
+    padding: 0 1em;
+    box-sizing: border-box;
+  }
   @include mq-md {
     width: 23rem;
-    margin: 0 0 0 1em;
+    margin: 0 0 2rem 1em;
   }
 }
 
@@ -16,12 +21,14 @@
 }
 .hatena-module-title {
   margin-bottom: .6em;
-  padding-bottom: .2em;
+  padding: .2em .6em;
   border-bottom: $border-solid-thin;
   font-size: 1rem;
   font-weight: bold;
+  color: $color-white;
+  background: $color-text;
   a {
-    color: $color-text;
+    color: $color-white;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -49,30 +56,56 @@
 
 // urllist module
 .hatena-urllist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .2em;
   list-style: none;
   margin: 0;
   padding: 0;
-  li {
-    padding: .5em 0;
-    &:last-child {
-      padding-bottom: 0;
-    }
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
+  li a {
+    color: $color-text-light;
+    background: $color-white;
+    text-decoration: none;
+    transition: $transition-normal;
+    &:hover {
+      color: $color-text;
+      background: $background-light;
     }
   }
   .urllist-category-link {
     font-size: .7rem;
     padding: .1em .3em;
+    color: $color-white;
+    background: $color-text;
+    &:hover {
+      color: $color-text-light;
+      background: $color-text;
+    }
+    &::before {
+      content: "# ";
+      display: inline;
+      font-weight: bold;
+    }
   }
   .urllist-date-link a {
     color: $color-text-light;
   }
   .urllist-entry-body {
     margin-top: .3em;
+  }
+  .urllist-categories {
+    margin: 0 0 1em;
+  }
+}
+
+// Category module
+.hatena-module-category {
+  li a {
+    display: block;
+    padding: .5em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
   }
 }
 

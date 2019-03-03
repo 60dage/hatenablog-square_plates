@@ -15,6 +15,7 @@
   margin: 0;
   font-size: 1.8rem;
   font-weight: 900;
+  font-family: $font-montserrat;
   @include mq-md { font-size: 2rem }
   a { color: $color-text }
 }

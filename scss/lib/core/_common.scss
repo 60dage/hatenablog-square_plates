@@ -56,12 +56,12 @@ h1,h2,h3,h4,h5,h6 {
   flex-direction: column;
   @include mq-md { flex-direction: row }
 }
-#wrapper {  // 左カラム幅可変
-  flex: 1;
-  background: $color-white;
+#wrapper {
+  flex: 1; // 左カラム幅可変
+  margin-bottom: 1rem;
 }
 
 // タイトル下HTML
-#top-editarea {
-  margin-bottom: 1em;
+#top-editarea, #bottom-editarea {
+  margin-bottom: 1rem;
 }

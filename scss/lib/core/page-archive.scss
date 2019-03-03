@@ -1,9 +1,26 @@
 .page-archive #wrapper {
   background: transparent;
 }
-.archive-header-category .archive-heading {
-  font-size: 1.8rem;
-  font-weight: 900;
+.archive-header-category {
+  margin-bottom: .6rem;
+  @include mq-xs {   margin-bottom: 1px }
+  .archive-heading {
+    margin: 0;
+    padding: .4em .6em;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: $color-white;
+    background: $color-text;
+    @include mq-xs {
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    &::before {
+      content: "# ";
+      display: inline;
+      font-weight: bold;
+    }
+  }
 }
 .archive-entries {
   display: grid;
@@ -13,14 +30,8 @@
 }
 .archive-entry {
   position: relative;
-  padding: 1em;
+  padding: 1em 1em 4em;
   overflow: hidden;
-  .date, .entry-title, .categories {
-    display: inline-block;
-  }
-  .date {
-    font-family: $font-montserrat;
-  }
   .entry-title {
     margin: 0;
   }
@@ -58,7 +69,7 @@
     margin-top: .3em;
   }
 }
-.archive-category-link {
+a.archive-category-link {
   color: $color-white;
   background: $color-text;
   text-decoration: none;
