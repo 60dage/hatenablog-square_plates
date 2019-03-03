@@ -1,4 +1,22 @@
 // 管理画面でパンくず表示設定をONにすると .page-archive, .page-entry で表示される
 .breadcrumb {
-  font-size: .9rem;
+  margin: 0 auto 1em;
+  padding: .4em;
+  font-size: .8rem;
+  background: $background-light;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.breadcrumb-link, .breadcrumb-child-link {
+  color: $color-text-light;
+  text-decoration: none;
+  &:hover {
+    color: $color-text;
+    text-decoration: underline;
+  }
+}
+.breadcrumb-gt {
+  display: inline-block;
+  color: $color-text-light;
+  transform: scaleX(.6);
 }
