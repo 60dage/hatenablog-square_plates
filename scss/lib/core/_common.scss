@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:800|Noto+Sans+JP:400,700,900&subset=japanese');
 @import url('https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp_s.min.css');
 
-html,
 body {
   font-family: YakuHanJPs, 'Helvetica Neue', 'Helvetica', 'Arial', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
   color: $color-text;
+  background: $background-light;
   line-height: 1.8;
 }
 a {
@@ -42,6 +42,11 @@ h1,h2,h3,h4,h5,h6 {
   width: 100%;
   @include mq-md { max-width: 88rem }
 }
+@include mq-xs {
+  #content-inner {
+    padding: 0;
+  }
+}
 
 // PC 2カラムレイアウト
 #content-inner {
@@ -52,6 +57,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 #wrapper {  // 左カラム幅可変
   flex: 1;
+  background: $color-white;
 }
 
 // タイトル下HTML
