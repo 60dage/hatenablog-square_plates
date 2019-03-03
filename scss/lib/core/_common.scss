@@ -34,16 +34,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 // container
-#container, #footer {
-  margin: auto;
-  box-sizing: border-box;
-  width: 100%;
-  @include mq-md { max-width: 88rem }
-}
-#top-editarea, #top-box, #content, #bottom-editarea, #footer {
+#blog-title-inner, #top-editarea, #top-box, #content-inner, #bottom-editarea, #footer {
   margin: auto;
   padding-left: 1em;
   padding-right: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  @include mq-md { max-width: 88rem }
 }
 
 // PC 2カラムレイアウト

@@ -1,8 +1,9 @@
 #blog-title {
-  margin: 2em 0;
+  padding: 2em 0;
   text-align: center;
+  background: $background-light;
   @include mq-sm {
-    margin: 3em 0;
+    padding: 3em 0;
     text-align: left;
   }
 }
