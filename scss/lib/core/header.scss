@@ -7,6 +7,9 @@
     padding: 3em 0;
     text-align: left;
   }
+  @include mq-lg {
+    margin: 0 auto 3em;
+  }
 }
 #blog-title-inner {
   padding: 0 1em;
