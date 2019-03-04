@@ -96,6 +96,9 @@
   .urllist-categories {
     margin: 0 0 1em;
   }
+  .bookmark-widget-counter {
+    background: transparent;
+  }
 }
 
 // Category module
@@ -114,6 +117,7 @@
   .search-form {
     border: $border-solid-thin;
     border-radius: 3px;
+    background: $color-white;
     width: 100%;
     box-sizing: border-box;
     display: flex;
