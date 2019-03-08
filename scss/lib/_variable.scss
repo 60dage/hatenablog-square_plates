@@ -22,7 +22,7 @@ $TransitionFast: ease-out .06s;
 $TransitionNormal: ease-out .2s;
 
 // media queries
-$mq-xs: "max-width: 480px";
-$mq-sm: "min-width: 768px";
-$mq-md: "min-width: 992px";
-$mq-lg: "min-width: 1200px";
+$Max480: "max-width: 480px";
+$Min768: "min-width: 768px";
+$Min992: "min-width: 992px";
+$Min1200: "min-width: 1200px";

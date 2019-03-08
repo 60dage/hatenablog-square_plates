@@ -1,20 +1,20 @@
-@mixin mq-xs {
-  @media ($mq-xs) {
+@mixin Max480 {
+  @media ($Max480) {
     @content;
   }
 }
-@mixin mq-sm {
-  @media ($mq-sm) {
+@mixin Min768 {
+  @media ($Min768) {
     @content;
   }
 }
-@mixin mq-md {
-  @media ($mq-md) {
+@mixin Min992 {
+  @media ($Min992) {
     @content;
   }
 }
-@mixin mq-lg {
-  @media ($mq-lg) {
+@mixin Min1200 {
+  @media ($Min1200) {
     @content;
   }
 }

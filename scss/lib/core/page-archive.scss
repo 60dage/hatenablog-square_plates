@@ -3,7 +3,7 @@
 }
 .archive-header-category {
   margin-bottom: .6rem;
-  @include mq-xs {   margin-bottom: 1px }
+  @include Max480 {   margin-bottom: 1px }
   .archive-heading {
     margin: 0;
     padding: .4em .6em;
@@ -11,7 +11,7 @@
     font-weight: 900;
     color: $TextColor_White;
     background: $TextColor;
-    @include mq-xs {
+    @include Max480 {
       padding: 1rem;
       box-sizing: border-box;
     }
@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1px;
-  @include mq-xs { grid-template-columns: 1fr }
+  @include Max480 { grid-template-columns: 1fr }
 }
 .archive-entry {
   position: relative;

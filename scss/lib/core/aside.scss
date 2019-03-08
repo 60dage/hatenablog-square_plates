@@ -1,11 +1,11 @@
 #box2 {
   margin-bottom: 2rem;
   width: 100%;
-  @include mq-xs {
+  @include Max480 {
     padding: 0 1em;
     box-sizing: border-box;
   }
-  @include mq-md {
+  @include Min992 {
     width: 23rem;
     margin: 0 0 2rem 1em;
   }
@@ -15,7 +15,7 @@
   box-sizing: border-box;
   margin-bottom: 3em;
   font-size: .85rem;
-  @include mq-sm {
+  @include Min768 {
     font-size: .9rem;
   }
 }

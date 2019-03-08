@@ -41,9 +41,9 @@ h1,h2,h3,h4,h5,h6 {
   padding-right: 1em;
   box-sizing: border-box;
   width: 100%;
-  @include mq-md { max-width: 88rem }
+  @include Min992 { max-width: 88rem }
 }
-@include mq-xs {
+@include Max480 {
   #content-inner {
     padding: 0;
   }
@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  @include mq-md { flex-direction: row }
+  @include Min992 { flex-direction: row }
 }
 #wrapper {
   flex: 1; // 左カラム幅可変

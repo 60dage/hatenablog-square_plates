@@ -3,11 +3,11 @@
   padding: 2em 0;
   text-align: center;
   background: $TextColor_White;
-  @include mq-sm {
+  @include Min768 {
     padding: 3em 0;
     text-align: left;
   }
-  @include mq-lg {
+  @include Min1200 {
     margin: 0 auto 3em;
   }
 }
@@ -19,7 +19,7 @@
   font-size: 1.8rem;
   font-weight: 900;
   font-family: $FontMontserrat;
-  @include mq-md { font-size: 2rem }
+  @include Min992 { font-size: 2rem }
   a { color: $TextColor }
 }
 #blog-description {

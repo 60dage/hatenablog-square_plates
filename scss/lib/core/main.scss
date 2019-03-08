@@ -8,10 +8,10 @@
   padding: 2em;
   max-width: 48rem;
   font-size: 100%;
-  @include mq-xs {
+  @include Max480 {
     padding: 1em;
   }
-  @include mq-lg {
+  @include Min1200 {
     font-size: 120%;
     padding-top: 5rem;
   }
@@ -75,19 +75,19 @@
   }
   h1 {
     font-size: 1.5em;
-    @include mq-md {
+    @include Min992 {
       font-size: 1.7em;
     }
   }
   h2 {
     font-size: 1.4em;
-    @include mq-md {
+    @include Min992 {
       font-size: 1.5em;
     }
   }
   h3 {
     font-size: 1.2em;
-    @include mq-md {
+    @include Min992 {
       font-size: 1.3em;
     }
   }
@@ -118,7 +118,7 @@
     overflow: auto;
     display: block;
     font-size: .8em;
-    @include mq-md {
+    @include Min992 {
       font-size: .9em;
     }
   }
