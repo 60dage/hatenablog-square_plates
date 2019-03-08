@@ -1,6 +1,7 @@
 .entry {
   position: relative;
   margin-bottom: 2rem;
+  box-shadow: $BoxshadowThin;
   background: $TextColor_White;
 }
 .entry-inner {
@@ -271,6 +272,7 @@
     box-sizing: border-box;
     color: $TextColor_Light;
     background: $TextColor_White;
+    box-shadow: $BoxshadowThin;
     text-decoration: none;
     transition: $TransitionFast;
     &:hover {
