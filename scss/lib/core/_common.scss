@@ -3,35 +3,35 @@
 
 body {
   font-family: YakuHanJPs, 'Helvetica Neue', 'Helvetica', 'Arial', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
-  color: $color-text;
-  background: $background-light;
+  color: $TextColor;
+  background: $BGColor_Light;
   line-height: 1.8;
   letter-spacing: .06em;
 }
 a {
-  color: $color-link;
-  &:hover { color: $color-link-hover }
+  color: $LinkColor;
+  &:hover { color: $LinkHoverColor }
   &.keyword {
     text-decoration: none;
-    border-bottom: $border-dotted-thin;
-    color: $color-text;
+    border-bottom: $BorderDottedThin;
+    color: $TextColor;
   }
 }
 h1,h2,h3,h4,h5,h6 {
-  color: $color-text;
+  color: $TextColor;
   line-height: 1.3;
   a {
     text-decoration: none;
     &:hover {
-      color: $color-link-hover;
+      color: $LinkHoverColor;
     }
   }
 }
 
 // グローバルヘッダ
 #globalheader-container {
-  background-color: $color-text;
-  color: $color-white;
+  background-color: $TextColor;
+  color: $TextColor_White;
 }
 
 // container

@@ -9,8 +9,8 @@
     padding: .4em .6em;
     font-size: 1.8rem;
     font-weight: 900;
-    color: $color-white;
-    background: $color-text;
+    color: $TextColor_White;
+    background: $TextColor;
     @include mq-xs {
       padding: 1rem;
       box-sizing: border-box;
@@ -36,9 +36,9 @@
     margin: 0;
   }
   .entry-title-link {
-    color: $color-white;
+    color: $TextColor_White;
     background: transparent;
-    transition: $transition-normal;
+    transition: $TransitionNormal;
     &:hover { text-decoration: underline }
   }
   .entry-thumb-link {
@@ -61,7 +61,7 @@
     margin: 0;
     font-size: .85rem;
     line-height: 1.4;
-    color: $color-text-light;
+    color: $TextColor_Light;
     background: transparent;
   }
   .social-buttons {
@@ -70,11 +70,11 @@
   }
 }
 a.archive-category-link {
-  color: $color-white;
-  background: $color-text;
+  color: $TextColor_White;
+  background: $TextColor;
   text-decoration: none;
   &:hover {
-    color: $color-white;
+    color: $TextColor_White;
     text-decoration: underline;
   }
   &::before {
@@ -86,29 +86,29 @@ a.archive-category-link {
 
 // thumbnail カーソルON時の変化
 .archive-entry {
-  background: $background-darker;
-  transition: $transition-normal;
+  background: $BGColor_Darker;
+  transition: $TransitionNormal;
   &:hover {
-    background: $background-dark;
-    transition: $transition-fast;
+    background: $BGColor_Dark;
+    transition: $TransitionFast;
   }
 
   .entry-title-link, .entry-description, .entry-thumb{
-    transition: $transition-normal;
+    transition: $TransitionNormal;
   }
   &:hover {
     .entry-title-link {
-      color: $color-text;
-      background: $color-white;
-      transition: $transition-fast;
+      color: $TextColor;
+      background: $TextColor_White;
+      transition: $TransitionFast;
     }
     .entry-description {
-      background: $color-text;
-      background: $transition-fast;
+      background: $TextColor;
+      background: $TransitionFast;
     }
     .entry-thumb {
       filter: brightness(80%);
-      transition: $transition-fast;
+      transition: $TransitionFast;
     }
   }
 }

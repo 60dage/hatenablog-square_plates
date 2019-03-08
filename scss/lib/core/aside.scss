@@ -22,13 +22,13 @@
 .hatena-module-title {
   margin-bottom: .6em;
   padding: .2em .6em;
-  border-bottom: $border-solid-thin;
+  border-bottom: $BorderSolidThin;
   font-size: 1rem;
   font-weight: bold;
-  color: $color-white;
-  background: $color-text;
+  color: $TextColor_White;
+  background: $TextColor;
   a {
-    color: $color-white;
+    color: $TextColor_White;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -38,6 +38,11 @@
 
 // Profile module
 .hatena-module-profile {
+  .hatena-module-body {
+    padding: .8em;
+    box-sizing: border-box;
+    background: $TextColor_White;
+  }
   .profile-icon {
     float: left;
     margin: 0 10px 10px 0;
@@ -63,24 +68,24 @@
   margin: 0;
   padding: 0;
   li a {
-    color: $color-text-light;
-    background: $color-white;
+    color: $TextColor_Light;
+    background: $TextColor_White;
     line-height: 1;
     text-decoration: none;
-    transition: $transition-normal;
+    transition: $TransitionNormal;
     &:hover {
-      color: $color-text;
-      background: $background-light;
+      color: $TextColor;
+      background: $BGColor_Light;
     }
   }
   .urllist-category-link {
     font-size: .7rem;
     padding: .1em .3em;
-    color: $color-white;
-    background: $color-text;
+    color: $TextColor_White;
+    background: $TextColor;
     &:hover {
-      color: $color-text-light;
-      background: $color-text;
+      color: $TextColor_Light;
+      background: $TextColor;
     }
     &::before {
       content: "# ";
@@ -89,7 +94,7 @@
     }
   }
   .urllist-date-link a {
-    color: $color-text-light;
+    color: $TextColor_Light;
   }
   .urllist-entry-body {
     margin-top: .3em;
@@ -116,9 +121,9 @@
 // Search module
 .hatena-module-search-box {
   .search-form {
-    border: $border-solid-thin;
+    border: $BorderSolidThin;
     border-radius: 3px;
-    background: $color-white;
+    background: $TextColor_White;
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -127,7 +132,7 @@
   .search-module-input {
     flex: 1 0;
     padding: 5px;
-    color: $color-text;
+    color: $TextColor;
     background: none;
     border: none;
     outline: none;

@@ -1,7 +1,7 @@
 .entry {
   position: relative;
   margin-bottom: 2rem;
-  background: $color-white;
+  background: $TextColor_White;
 }
 .entry-inner {
   margin: auto;
@@ -19,15 +19,15 @@
 .entry-header {
   padding-bottom: 1em;
   margin-bottom: 2em;
-  border-bottom: $border-solid-thin;
+  border-bottom: $BorderSolidThin;
   position: relative;
 }
 .date {
   margin-bottom: .5em;
   font-size: .9em;
-  font-family: $font-montserrat;
+  font-family: $FontMontserrat;
   a {
-    color: $color-text-light;
+    color: $TextColor_Light;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -44,7 +44,7 @@
   a {
     display: inline-block;
     margin-right: .5em;
-    color: $color-text;
+    color: $TextColor;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -124,15 +124,15 @@
   }
   table th,
   table td {
-    border: $border-solid-thin;
+    border: $BorderSolidThin;
     padding: 5px 10px;
   }
   table th {
-    background: $background-light;
+    background: $BGColor_Light;
   }
 
   blockquote {
-    border: $border-solid-thin;
+    border: $BorderSolidThin;
     margin: 0 0 10px;
     padding: 20px;
     p:first-child {
@@ -146,7 +146,7 @@
     font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
   }
   pre {
-    background: $background-light;
+    background: $BGColor_Light;
     border: none;
     white-space: pre-wrap;
     text-overflow: ellipsis;
@@ -166,20 +166,20 @@
     font-size: 90%;
     margin: 0 2px;
     padding: 0px 5px;
-    background-color: $background-light;
+    background-color: $BGColor_Light;
     border-radius: 3px;
   }
   hr {
     width: 50%;
     border: 0;
     border: none;
-    border-top: $border-solid-thin;
+    border-top: $BorderSolidThin;
     margin: 2em auto;
   }
   .table-of-contents {
     padding: 1em 1em 1em 2em;
     margin: 1em 0;
-    border: $border-solid-thin;
+    border: $BorderSolidThin;
   }
 }
 
@@ -190,7 +190,7 @@
   }
 }
 .entry-footer-section {
-  color: $color-text-light;
+  color: $TextColor_Light;
   font-size: .9em;
 }
 
@@ -206,10 +206,10 @@
   }
   .entry-comment {
     padding: 10px 0 10px 60px;
-    border-bottom: $border-solid-thin;
+    border-bottom: $BorderSolidThin;
     position: relative;
     &:first-child {
-      border-top: $border-solid-thin;
+      border-top: $BorderSolidThin;
     }
   }
   .read-more-comments {
@@ -231,24 +231,24 @@
 .comment-content {
   margin: 0 0 .4em 0;
   word-wrap: break-word;
-  color: $color-text;
+  color: $TextColor;
   font-size: .85em;
   p {
     margin: 0 0 .6em 0;
   }
 }
 .comment-metadata {
-  color: $color-text-light;
+  color: $TextColor_Light;
   margin: 0;
   font-size: .8em;
   a {
-    color: $color-text-light;
+    color: $TextColor_Light;
   }
 }
 .leave-comment-title {
   padding: .6em 1em;
   font-size: .85em;
-  border: $border-solid-thin;
+  border: $BorderSolidThin;
 }
 
 // Pager
@@ -269,13 +269,13 @@
     width: 96%;
     padding: 20px;
     box-sizing: border-box;
-    color: $color-text-light;
-    background: $color-white;
+    color: $TextColor_Light;
+    background: $TextColor_White;
     text-decoration: none;
-    transition: $transition-fast;
+    transition: $TransitionFast;
     &:hover {
-      color: $color-text;
-      background: $background-light;
+      color: $TextColor;
+      background: $BGColor_Light;
     }
   }
 }

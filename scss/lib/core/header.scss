@@ -2,7 +2,7 @@
   margin: 0 auto 1em;
   padding: 2em 0;
   text-align: center;
-  background: $color-white;
+  background: $TextColor_White;
   @include mq-sm {
     padding: 3em 0;
     text-align: left;
@@ -18,9 +18,9 @@
   margin: 0;
   font-size: 1.8rem;
   font-weight: 900;
-  font-family: $font-montserrat;
+  font-family: $FontMontserrat;
   @include mq-md { font-size: 2rem }
-  a { color: $color-text }
+  a { color: $TextColor }
 }
 #blog-description {
   font-weight: normal;
