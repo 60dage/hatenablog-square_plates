@@ -58,13 +58,14 @@
 .hatena-urllist {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: .2em;
+  grid-gap: .8em;
   list-style: none;
   margin: 0;
   padding: 0;
   li a {
     color: $color-text-light;
     background: $color-white;
+    line-height: 1;
     text-decoration: none;
     transition: $transition-normal;
     &:hover {
