@@ -31,7 +31,13 @@
 .archive-entry {
   position: relative;
   padding: 1em 1em 4em;
+  background: $background-darker;
+  transition: $transition-normal;
   overflow: hidden;
+  &:hover {
+    background: $background-dark;
+    transition: $transition-fast;
+  }
   .entry-title {
     margin: 0;
   }
