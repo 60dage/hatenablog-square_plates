@@ -30,9 +30,12 @@
 }
 
 // ヘッダ画像を設定したとき
-.header-image-enable {
+.header-image-enable, .header-image-only {
   #blog-title {
-    margin: 0 0 2em;
+    margin: 0 0 1em;
+    padding: 0;
+    box-shadow: none;
+    @include Min1200 { margin: 0 auto 1em }
   }
   #blog-title-inner {
     display: flex;
