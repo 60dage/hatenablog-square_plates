@@ -17,10 +17,10 @@ $ npm install
 
 # 始め方
 
-SCSSファイルのコンパイルと監視（build/に出力）
+SCSSファイルのコンパイルと監視（build/に出力）  
 `$ npx parcel scss/style.scss -d build`
 
-SCSSファイルのコンパイルとminyfy（dist/に出力）
+SCSSファイルのコンパイルとminify（dist/に出力）  
 `$ npx parcel build scss/style.scss`
 
 # 構造
