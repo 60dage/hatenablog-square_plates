@@ -2,7 +2,7 @@
   "parser": "postcss-scss",
   "plugins": {
     "autoprefixer": {
-      "grid": true,
+      "grid": "autoplace",
       "browsers": [
         "last 1 versions",
         "> 1%",
