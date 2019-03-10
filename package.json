@@ -1,13 +1,13 @@
 {
-  "name": "6q-boilerplate-hatenablog_theme",
+  "name": "6q-hatenablog_theme-sqware_plates",
   "version": "1.0.0",
-  "description": "Boilerplate for Hatena Blog theme by Rokuzeudon",
+  "description": "Hatena Blog theme by Rokuzeudon",
   "author": "Rokuzeudon",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "devDependencies": {
-    "autoprefixer": "^9.4.9",
+    "autoprefixer": "^9.4.10",
     "normalize.css": "^7.0.0",
-    "parcel": "^1.11.0",
+    "parcel": "^1.12.0",
     "sass": "^1.17.2"
   }
 }
